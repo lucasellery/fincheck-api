@@ -1,0 +1,11 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#ca3a5e",
+    "titleBar.inactiveBackground": "#ca3a5e",
+    "titleBar.activeForeground": "#000000",
+    "titleBar.inactiveForeground": "#000000"
+  },
+  "cSpell.words": [
+    "addtoast"
+  ]
+}
