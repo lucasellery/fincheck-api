@@ -32,6 +32,12 @@
 $ yarn install
 ```
 
+## Environment variables
+``` bash
+# use your own database url here or my database url when it is in the cloud
+$ DATABASE_URL="postgresql://root:root@localhost:5432/fincheck?schema=public"
+```
+
 ## Running the app
 
 ```bash
