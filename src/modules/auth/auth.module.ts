@@ -7,9 +7,11 @@ import { env } from 'src/shared/database/config/env';
 @Module({
   imports: [
     JwtModule.register({
-      signOptions: { expiresIn: '7d' },
-      secret: env.jwtSecret,
       global: true,
+      signOptions: {
+        expiresIn: '7d',
+      },
+      secret: env.jwtSecret,
     }),
   ],
   controllers: [AuthController],
