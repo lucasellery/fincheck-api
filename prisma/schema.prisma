@@ -32,13 +32,13 @@ enum BankAccountType {
 }
 
 model BankAccount {
-  id            String          @id @default(uuid()) @db.Uuid
-  userId        String          @map("user_id") @db.Uuid
-  name          String
-  initalBalance Float           @map("initial_balance") // @map is used to map the field name to the database column name
-  type          BankAccountType
-  color         String
-  transactions  Transaction[]
+  id             String          @id @default(uuid()) @db.Uuid
+  userId         String          @map("user_id") @db.Uuid
+  name           String
+  initialBalance Float           @map("initial_balance") // @map is used to map the field name to the database column name
+  type           BankAccountType
+  color          String
+  transactions   Transaction[]
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
